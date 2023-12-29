@@ -56,7 +56,7 @@ def klasifikasi():
 
     if st.button('Predict'):
         user_result = rf.predict(user_data_scaled)
-        st.subheader('Your Report : ')
+        st.subheader('Hasil Prediksi : ')
 
         if user_result[0] == 0:
             st.write('#### **Anda Sehat!**\n')
