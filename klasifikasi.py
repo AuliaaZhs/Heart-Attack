@@ -70,8 +70,7 @@ def klasifikasi():
                 or user_data['kcm'].iloc[0] > 25
                 or user_data['troponin'].iloc[0] > 0.04
             ):
-                st.write('\nNamun terdapat faktor yang bisa menyebabkan Anda terkena penyakit jantung.')
-                st.write('Oleh karena itu, terdapat beberapa saran untuk Anda:\n')
+                st.write('**Namun terdapat faktor yang bisa menyebabkan Anda terkena penyakit jantung.**')
 
                 if user_data['pressurehight'].iloc[0] > 120:
                     st.write("##### **Tekanan Darah Tinggi (Sistolik) anda di atas 120mmHg.**")
